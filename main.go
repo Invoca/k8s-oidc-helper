@@ -19,9 +19,9 @@ import (
 	clientcmdlatest "k8s.io/client-go/tools/clientcmd/api/latest"
 )
 
-const Version = "v0.1.0"
+const Version = "v0.1.1-invoca"
 
-const oauthUrl = "https://accounts.google.com/o/oauth2/auth?redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&client_id=%s&scope=openid+email+profile&approval_prompt=force&access_type=offline"
+const oauthUrl = "https://accounts.google.com/o/oauth2/auth?redirect_uri=urn:ietf:wg:oauth:2.0:oob&ack_oob_shutdown=2022-10-03&response_type=code&client_id=%s&scope=openid+email+profile&approval_prompt=force&access_type=offline"
 
 func main() {
 	flag.BoolP("version", "v", false, "Print version and exit")
